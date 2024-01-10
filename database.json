@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "driver": "pg",
+    "host": "localhost",
+    "database": "storefront",
+    "user": "sahar",
+    "password": "password123"
+  },
+
+  "test": {
+    "driver": "pg",
+    "host": "localhost",
+    "database": "storefront_test",
+    "user": "sahar",
+    "password": "password123"
+  }
+
+}
