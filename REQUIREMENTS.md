@@ -5,17 +5,25 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## API Endpoints & Routes
 #### Products
-- Index  [GET]  '/products'
-- Show   [GET]  '/products/:id'
-- Create [POST]  [token required]
+- Index [GET] Route: /products
+- Show [GET] Route:  /products/:id
+- Create [token required] [POST] Route: /products 
+
 
 #### Users
-- Index [GET]  [token required '/users'
-- Show [GET]  [token required] '/users/:id'
-- Create [POST]  [token required] 
+- Index [token required] [GET] Route: /users
+- Show [token required] [GET] Route: /users/:id
+- Create [token required] [POST] Route: /users/:id 
+  Body parameters:
+  firstname (string). lastname (string), password (string).
 
 #### Orders
-- Current Order by user (args: user id)[token required] [GET]'/orders/:id'
+- Index [token required] [GET] Route: /orders
+- Show [token required] [GET] Route: /orders/:id
+- Create [token required] [POST] Route: /orders/:id
+
+- Current Order by user (args: user id)[token required] [GET] Route:/orders/:id
+- Get Ordered Products by Order ID [token required] [GET] Route: /ordersProducts/:id
 
 ## Data Shapes
 #### Products
@@ -29,7 +37,7 @@ These are the notes from a meeting with the frontend developer that describe wha
 - lastName
 - password
 
-#### Orders
+### Orders
 - id
 - id of each product in the order
 - quantity of each product in the order

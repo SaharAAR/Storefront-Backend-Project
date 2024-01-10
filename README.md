@@ -1,7 +1,7 @@
 ### Storefront Backend Project
 Welcome to the Storefront Backend Project! This repository contains a basic Node.js and Express application that serves as a starting point for building an API.
 
-## Getting Started
+# Getting Started
 To get started with the project, follow these steps:
 
 # Prerequisites
@@ -48,6 +48,19 @@ Ensure you have the following installed:
 );
 
 
+# Environment Variables
+
+POSTGRES_HOST=127.0.0.1
+POSTGRES_DB_TEST=storefront_test
+POSTGRES_DB=storefront
+POSTGRES_USER=sahar
+POSTGRES_PASSWORD=password123
+BCRYPT_PASSWORD= random
+SALT_ROUNDS = 44
+TOKEN_SECRET=secret123
+ENV = dev
+
+
 # Backend and Database Ports
 
 - Backend Port: 3000
@@ -65,8 +78,9 @@ Ensure you have the following installed:
 	- Products: http://localhost:3000/products		
 	- Users: http://localhost:3000/users
 	- Orders: http://localhost:3000/orders
+    - OrdersPoducts: http://localhost:3000/ordersProducts
 
-# Required Technologies
+## Required Technologies
 This application uses the following technologies:
 
 - PostgreSQL for the database
