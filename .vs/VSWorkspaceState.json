@@ -1,13 +1,14 @@
 {
   "ExpandedNodes": [
     "",
+    "\\dist",
+    "\\migrations",
     "\\migrations\\sqls",
-    "\\spec\\support",
     "\\src",
     "\\src\\handlers",
     "\\src\\models",
     "\\src\\tests"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\dist",
   "PreviewInSolutionExplorer": false
 }

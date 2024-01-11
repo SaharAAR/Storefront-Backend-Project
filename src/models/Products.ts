@@ -43,4 +43,18 @@ export class ProductInfo {
       throw new Error(`Cannot create Product ${product.name}`)
     }
   }
+    async deleteAll(): Promise<void> {
+        let connection;
+        try {
+            connection = await client.connect();
+            const sql = 'DELETE FROM products;';
+            await connection.query(sql);
+        } catch (error) {
+            throw new Error(`Cannot delete all products: ${error}`);
+        } finally {
+            if (connection) {
+                connection.release();
+            }
+        }
+    }
 }

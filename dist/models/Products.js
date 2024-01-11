@@ -44,5 +44,21 @@ class ProductInfo {
             throw new Error(`Cannot create Product ${product.name}`);
         }
     }
+    async deleteAll() {
+        let connection;
+        try {
+            connection = await database_1.default.connect();
+            const sql = 'DELETE FROM products;';
+            await connection.query(sql);
+        }
+        catch (error) {
+            throw new Error(`Cannot delete all products: ${error}`);
+        }
+        finally {
+            if (connection) {
+                connection.release();
+            }
+        }
+    }
 }
 exports.ProductInfo = ProductInfo;
