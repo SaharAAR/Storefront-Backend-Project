@@ -1,5 +1,5 @@
 ### Storefront Backend Project
-Welcome to the Storefront Backend Project! This repository contains a basic Node.js and Express application that serves as a starting point for building an API.
+The project involves setting up a Node.js backend with Express and a PostgreSQL database, following best practices for security and code organization. The README.md provides concise instructions for database and project setup, emphasizing secure handling of environment variables. The project includes CRUD endpoints, organized routes, and model files aligning with database tables. SQL queries and migrations are well-formed, and user passwords are encrypted using bcrypt. Authentication is implemented using JWT tokens, integrated into HTTP responses and validated for secure routes. Comprehensive testing, including endpoint and unit tests, ensures the functionality of the API. The project adheres to JavaScript/TypeScript best practices and emphasizes code quality throughout.
 
 # Getting Started
 To get started with the project, follow these steps:
